@@ -52,7 +52,7 @@ const Home = () => {
                         <Link to="/about" className="btn btn-outline">Read More About Us</Link>
                     </div>
                     <div className="welcome-image">
-                        <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=1000" alt="Students learning" className="rounded-img" />
+                        <img src="https://images.pexels.com/photos/5211431/pexels-photo-5211431.jpeg" alt="Students learning" className="rounded-img" />
                     </div>
                 </div>
             </Section>

@@ -59,6 +59,13 @@
     gap: 3rem;
 }
 
+@media (max-width: 768px) {
+    .methods-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+}
+
 .method-item {
     display: flex;
     gap: 1.5rem;

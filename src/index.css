@@ -83,12 +83,19 @@ img {
   display: block;
 }
 
-button {
+button,
+.btn {
   cursor: pointer;
   border: none;
   background: none;
   font-family: inherit;
   transition: var(--transition);
+}
+
+button:active,
+.btn:active {
+  transform: scale(0.98);
+  opacity: 0.9;
 }
 
 /* Base Layout Classes */

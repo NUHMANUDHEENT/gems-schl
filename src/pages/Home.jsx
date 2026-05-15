@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Shield, BookOpen, Users, Clock, Star, ArrowRight, CheckCircle } from 'lucide-react';
 import Section from '../components/Section';
 import './Home.css';
@@ -30,8 +31,8 @@ const Home = () => {
                     <h1>Nurturing Minds,<br /><span>Shaping Futures</span></h1>
                     <p>Providing excellence in education at GEMS School, Kundoor. We believe in holistic development and academic brilliance.</p>
                     <div className="hero-btns">
-                        <button className="btn btn-primary">Admissions 2026</button>
-                        <button className="btn btn-white">Explore Programs <ArrowRight size={18} /></button>
+                        <Link to="/admissions" className="btn btn-primary">Admissions 2026</Link>
+                        <Link to="/academics" className="btn btn-white">Explore Programs <ArrowRight size={18} /></Link>
                     </div>
                 </div>
             </section>
@@ -48,7 +49,7 @@ const Home = () => {
                             <li><CheckCircle size={18} /> Strong value-based education</li>
                             <li><CheckCircle size={18} /> Safe and inclusive environment</li>
                         </ul>
-                        <button className="btn btn-outline">Read More About Us</button>
+                        <Link to="/about" className="btn btn-outline">Read More About Us</Link>
                     </div>
                     <div className="welcome-image">
                         <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=1000" alt="Students learning" className="rounded-img" />
@@ -88,7 +89,7 @@ const Home = () => {
                 <div className="cta-content text-center">
                     <h2>Ready to Join Our Community?</h2>
                     <p>Join the GEMS family today and give your child the education they deserve.</p>
-                    <button className="btn btn-gold">Contact Admissions Now</button>
+                    <Link to="/contact" className="btn btn-gold">Contact Admissions Now</Link>
                 </div>
             </Section>
 

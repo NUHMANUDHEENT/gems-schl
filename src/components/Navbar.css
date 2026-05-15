@@ -157,12 +157,30 @@
         z-index: 1001;
     }
 
+    .nav-item {
+        width: 100%;
+        padding: 12px 15px;
+        border-radius: var(--radius-sm);
+        display: block;
+    }
+
+    .nav-item:active {
+        background: var(--gray-100);
+        color: var(--primary);
+    }
+
+    .nav-item::after {
+        display: none;
+    }
+
     .hidden-mobile {
         display: none;
     }
 
     .mobile-only {
         display: block;
+        width: 100%;
+        text-align: center;
         margin-top: 20px;
     }
 }

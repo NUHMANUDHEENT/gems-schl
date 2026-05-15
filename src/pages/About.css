@@ -1,0 +1,136 @@
+.about-intro-grid {
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.about-text h2 {
+    margin-bottom: 1.5rem;
+    font-size: 2.2rem;
+}
+
+.about-text p {
+    margin-bottom: 1.5rem;
+    color: var(--gray-700);
+}
+
+.vm-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+}
+
+.vm-card {
+    background: var(--white);
+    padding: 3rem;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
+    text-align: center;
+    transition: var(--transition);
+}
+
+.vm-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+.vm-icon {
+    width: 80px;
+    height: 80px;
+    background: var(--gray-50);
+    color: var(--secondary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin: 0 auto 2rem;
+}
+
+.vm-card h2 {
+    margin-bottom: 1.5rem;
+}
+
+.principal-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.principal-text blockquote {
+    font-size: 1.5rem;
+    font-style: italic;
+    font-family: var(--font-heading);
+    color: var(--primary);
+    margin-bottom: 2rem;
+    position: relative;
+    padding-left: 2rem;
+    border-left: 5px solid var(--secondary);
+}
+
+.principal-name {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--primary);
+}
+
+.principal-title {
+    color: var(--secondary);
+    font-weight: 600;
+}
+
+.principal-img {
+    width: 100%;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-lg);
+}
+
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+
+.value-card {
+    background: var(--white);
+    padding: 2.5rem 1.5rem;
+    border-radius: var(--radius-md);
+    text-align: center;
+    transition: var(--transition);
+}
+
+.value-card:hover {
+    background: var(--primary);
+    color: var(--white);
+}
+
+.value-card:hover h3,
+.value-card:hover p {
+    color: var(--white);
+}
+
+.v-icon {
+    color: var(--secondary);
+    margin-bottom: 1.5rem;
+}
+
+@media (max-width: 992px) {
+
+    .about-intro-grid,
+    .principal-grid,
+    .vm-grid {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+
+    .values-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .values-grid {
+        grid-template-columns: 1fr;
+    }
+}
